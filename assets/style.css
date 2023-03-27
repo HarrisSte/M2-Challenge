@@ -14,17 +14,21 @@ body {
 }
 
 main {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   /* margin-top: 2%; */
 }
+
+/* section {
+    display: inline-block;
+} */
 
 .steph-header {
     height: 50px;
     display: flex;
     background-color: #214FB9;
     position: relative;
-    padding: 5px 0
+    padding: 5px 0;
 }
 
 .steph-header h1 {
@@ -32,6 +36,7 @@ main {
     background-size: 60px;
     font-size: 32px;
     font-family: var(--font);
+    border-radius: 25px;
     }
 
 .steph-header nav {
@@ -62,7 +67,8 @@ main {
    position: relative;
    display: flex;
    min-width: 100%;
-   min-height: 210%; 
+   min-height: 300%;
+   object-fit: cover; 
 }
 
 .banner p {
@@ -75,19 +81,81 @@ main {
 .banner h2 {
     position: absolute;
     text-align: end;
+    top: 215px;
+    bottom: 0;
+    right: 15px;
+    color: darkblue;
+    font-family: var(--font);
 }
 
+.about-me {
+    /* border: 1px solid black; */
+    margin: 1rem;
+    padding: -1rem 0rem;
+    text-align: left;
+    display: inline-flex;
+}
+
+.about-me-info {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-family: var(--font);
+    color: white;
+}
+
+.work {
+    margin: 1rem;
+    padding: -1rem 0rem;
+    text-align: left;
+    display: inline-flex;
+}
+
+.work-info {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-family: var(--font);
+    color: white;
+}
+
+.contact {
+    margin: 1rem;
+    padding: -1rem 0rem;
+    text-align: left;
+    display: inline-flex;
+}   
+
+.contact-me-info {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-family: var(--font);
+    color: white;
+}
 /* .banner bottom-right {
     position: absolute;
     bottom: 10px;
     right: 15px;
 } */
 
-.info {
+/* .info {
     flex: 1 0 200px;
     padding: 10px;
     text-align: center;
     border: 2px solid navajowhite;
+    position: relative; */
+/* } */
+
+/* .info-about-me {
+    position: relative;
+} */
+
+/* .info-work {
+    position: absolute;
 }
 
 .info p {
@@ -98,7 +166,7 @@ main {
 .info h1 {
     font-size: 26px;
     color: antiquewhite;
-}
+} */
 
 footer {
     display:flex;
