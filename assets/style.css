@@ -16,12 +16,7 @@ body {
 main {
   display: inline;
   flex-wrap: wrap;
-  /* margin-top: 2%; */
 }
-
-/* section {
-    display: inline-block;
-} */
 
 .steph-header {
     height: 60px;
@@ -45,14 +40,13 @@ main {
 
 .steph-header nav {
     padding-top: 15px;
-    margin-right: 10px;
     font-family: var(--font);
     position: absolute;
     right: 10px;
 }
 
 .steph-header nav li {
-    display: inline;
+    display: inline-block;
     padding-right: 15px;
 }
 
