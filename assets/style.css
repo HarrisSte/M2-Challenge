@@ -13,6 +13,12 @@ body {
     margin: 0px;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
 .steph-header {
     height: 50px;
     display: flex;
@@ -74,7 +80,6 @@ body {
 .info p {
     font-size: 20px;
     border: 2px solid navy;
-
 }
 
 .info h1 {
@@ -82,13 +87,12 @@ body {
     color: antiquewhite;
 }
 
-
 footer {
     display:flex;
     justify-content: center;
     padding: 30px;
     font-family: var(--font);
-    color: antiquewhite;
+    color: antiquewhite
     /* padding:30px;
     clear: both;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
