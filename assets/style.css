@@ -16,7 +16,7 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 .steph-header {
@@ -59,9 +59,10 @@ main {
 }
 
 .banner img {
-   flex-shrink: 0;
+   position: relative;
+   display: flex;
    min-width: 100%;
-   min-height: 100%; 
+   min-height: 210%; 
 }
 
 .banner p {
@@ -71,10 +72,22 @@ main {
     font-family: 'Lato', sans-serif;
 }
 
-.banner bottom-right {
+.banner h2 {
+    position: absolute;
+    text-align: end;
+}
+
+/* .banner bottom-right {
     position: absolute;
     bottom: 10px;
     right: 15px;
+} */
+
+.info {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid navajowhite;
 }
 
 .info p {
