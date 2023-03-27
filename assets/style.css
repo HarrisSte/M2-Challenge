@@ -89,7 +89,6 @@ main {
 }
 
 .about-me {
-    /* border: 1px solid black; */
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
@@ -98,7 +97,7 @@ main {
 
 .about-me-info {
     display: inline-block;
-    border: 1px solid red;
+    border-right: 5px solid navy;
     padding: 1rem 1rem;
     vertical-align: middle;
     font-family: var(--font);
@@ -114,14 +113,14 @@ main {
 
 .work-info {
     display: inline-block;
-    border: 1px solid red;
+    border-right: 5px solid navy;
     padding: 1rem 1rem;
     vertical-align: middle;
     font-family: var(--font);
     color: white;
 }
 
-.contact {
+.contact-me {
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
@@ -130,7 +129,7 @@ main {
 
 .contact-me-info {
     display: inline-block;
-    border: 1px solid red;
+    border-right: 5px solid navy;
     padding: 1rem 1rem;
     vertical-align: middle;
     font-family: var(--font);
