@@ -1,3 +1,7 @@
+:root {
+    --font: 'Lato', sans-serif;
+    /* --navhover: lightblue; */
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,13 +25,13 @@ body {
     background-color: #50679C;
     background-size: 60px;
     font-size: 32px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font);
     }
 
 .steph-header nav {
     padding-top: 15px;
     margin-right: 10px;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font);
     position: absolute;
     right: 10px;
 }
@@ -80,11 +84,16 @@ body {
 
 
 footer {
-    padding:30px;
+    display:flex;
+    justify-content: center;
+    padding: 30px;
+    font-family: var(--font);
+    color: antiquewhite;
+    /* padding:30px;
     clear: both;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:aqua;
-    text-align: center;
+    text-align: center; */
 }
 
 footer h2 {
