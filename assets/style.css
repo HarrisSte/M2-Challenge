@@ -1,7 +1,4 @@
-:root {
-    --font: 'Lato', sans-serif;
-    /* --navhover: lightblue; */
-}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,7 +6,8 @@
 }
 
 body {
-    background-color: #5DADE2;
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(9,9,121,1) 75%);
     margin: 0px;
 }
 
@@ -34,7 +32,7 @@ h2 {
     background-color: #50679C;
     background-size: 2;
     font-size: 36px;
-    font-family: var(--font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 10px;
     padding-left: 100px;
     color: #154360;
@@ -44,7 +42,7 @@ h2 {
 
 .main-header nav {
     padding-top: 15px;
-    font-family: var(--font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     right: 10px;
 }
@@ -77,7 +75,7 @@ h2 {
     padding: 175px 20px;
     color: blue;
     display: inline-block;
-    font-family: 'Lato', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .banner h2 {
@@ -87,7 +85,7 @@ h2 {
     bottom: 0;
     right: 15px;
     color: darkblue;
-    font-family: var(--font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title h1 {
@@ -95,23 +93,46 @@ h2 {
     font-size: 50px;
 }
 
-.about-info {
+/* .info {
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
     display: wrap;
-}
+    color: white;
+} */
 
+.about-me h1 {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 100px;
+    color: white;
+    
+}
+.about-me .info {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    color: white;
+    margin: 1rem;
+    padding: -1rem 0rem;
+    text-align: left;
+    display: wrap;
+    color: white;
+}
 
 .container-1 {
     display: flex;
     flex-flow: wrap;
+    row-gap: 10px;
+    margin: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .child-1 {
     flex: 0 1 100%;
     border: 5px solid black;
     margin: 20px;
+    color: white;
 }
 
 .child-2 {
@@ -140,7 +161,7 @@ footer {
     display:flex;
     justify-content: center;
     padding: 30px;
-    font-family: var(--font);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: antiquewhite
 }
 
