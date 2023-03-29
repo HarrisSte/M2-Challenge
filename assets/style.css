@@ -18,7 +18,11 @@ main {
   flex-wrap: wrap;
 }
 
-.steph-header {
+h2 {
+    font-size: 20px;
+}
+
+.main-header {
     height: 2;
     display: flex;
     background-color: #214FB9;
@@ -26,7 +30,7 @@ main {
     padding: 5px 0px;
 }
 
-.steph-header h1 {
+.main-header h1 {
     background-color: #50679C;
     background-size: 2;
     font-size: 36px;
@@ -38,14 +42,14 @@ main {
     padding-right: 10px;
     }
 
-.steph-header nav {
+.main-header nav {
     padding-top: 15px;
     font-family: var(--font);
     position: absolute;
     right: 10px;
 }
 
-.steph-header nav li {
+.main-header nav li {
     display: inline-block;
     padding-right: 15px;
 }
@@ -86,32 +90,50 @@ main {
     font-family: var(--font);
 }
 
-.container-1 {
-    display: flex;
-    flex-flow: row wrap;
+.title h1 {
+    color: white;
+    font-size: 50px;
 }
 
-.child-1 {
-    flex: 0 1 33.3333%;
-    border: 1px solid black;
-    margin: 1rem;
-    padding: -1rem 0rem;
-    text-align: left;
-}
-
-.child-2 {
-    flex: 1 1 50%;
-    border: 1px solid red;
-}
-
-.about-me {
+.about-info {
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
     display: inline-flex;
 }
 
-.about-me-info {
+.container-1 {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.child-1 {
+    flex: 0 1 100%;
+    border: 5px solid black;
+}
+
+.child-2 {
+    flex: 0 1 50%; 
+    border: 5px solid purple;
+}
+
+.child-3 {
+    flex: 0 1 50%; 
+    border: 5px solid red;
+}
+
+.child-4 {
+    flex: 0 1 50%; 
+    border: 5px solid green;
+}
+
+.child-5 {
+    flex: 0 1 50%; 
+    border: 5px solid yellow;
+
+}
+
+/* .info {
     display: inline-block;
     border-right: 5px solid navy;
     padding: 1rem 1rem;
@@ -119,9 +141,18 @@ main {
     font-family: var(--font);
     color: white;
     font-size: 20px;
-}
+} */
+/* .about-me-info {
+    display: inline-block;
+    border-right: 5px solid navy;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    font-family: var(--font);
+    color: white;
+    font-size: 20px;
+} */
 
-.work {
+/* .work {
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
@@ -135,10 +166,10 @@ main {
     vertical-align: middle;
     font-family: var(--font);
     color: white;
-    font-size: 2;
-}
+    font-size: 20px;
+} */
 
-.contact-me {
+/* .contact-me {
     margin: 1rem;
     padding: -1rem 0rem;
     text-align: left;
@@ -153,7 +184,7 @@ main {
     font-family: var(--font);
     color: white;
     font-size: 2;
-}
+} */
 /* .banner bottom-right {
     position: absolute;
     bottom: 10px;
