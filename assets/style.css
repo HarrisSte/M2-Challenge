@@ -93,6 +93,7 @@ h2 {
     font-size: 50px;
 }
 
+
 /* .info {
     margin: 1rem;
     padding: -1rem 0rem;
@@ -100,6 +101,23 @@ h2 {
     display: wrap;
     color: white;
 } */
+.flex-container {
+    display: flex;
+}
+
+.flex-child-1 {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child-2 {
+    flex: 1;
+    border: 2px solid red;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
 
 .about-me h1 {
     border: 1px solid black;
@@ -108,7 +126,7 @@ h2 {
     color: white;
     
 }
-.about-me .info {
+/* .about-me .info {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid black;
     color: white;
@@ -117,7 +135,7 @@ h2 {
     text-align: left;
     display: wrap;
     color: white;
-}
+} */
 
 .container-1 {
     display: flex;
