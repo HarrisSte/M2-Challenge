@@ -105,19 +105,35 @@ h2 {
     display: flex;
 }
 
-.flex-child-1 {
+/* .flex-child-1 {
     flex: 1;
     border: 2px solid yellow;
-}  
+    color: white;
+    font-size: 50px;
+}   */
+
+.flex-child-1 h1 {
+    border-right: 10px solid white;
+    padding-right: 2rem;
+    flex: 1;
+    padding-top: 1rem;
+    color: white;
+    font-size: 50px;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
 
 .flex-child-2 {
     flex: 1;
-    border: 2px solid red;
+    color: white;
+    font-size: 22px;
+    margin-left: 2rem;
+    margin-top: 5rem;
 }
 
-.flex-child:first-child {
+/* .flex-child:first-child {
     margin-right: 20px;
-} 
+}  */
 
 .about-me h1 {
     border: 1px solid black;
@@ -126,6 +142,39 @@ h2 {
     color: white;
     
 }
+
+.flex-child-3 h1 {
+    border-right: 10px solid white;
+    padding-right: 2rem;
+    flex: 1;
+    padding-top: 1rem;
+    color: white;
+    font-size: 50px;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+.flex-child-4 {
+    flex: 1;
+    color: white;
+    font-size: 22px;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.flex-child-4 nav {
+    padding-top: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: center;
+    right: 10px;
+}
+
+.flex-child-4 nav li {
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 1rem;
+}
+
 /* .about-me .info {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px solid black;
