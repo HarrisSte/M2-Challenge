@@ -1,3 +1,6 @@
+/* :root {
+
+} */
 
 * {
     box-sizing: border-box;
@@ -6,8 +9,8 @@
 }
 
 body {
-    background: rgb(34,193,195);
-    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(9,9,121,1) 75%);
+    background: rgb(14,35,144);
+    background: radial-gradient(circle, rgba(14,35,144,1) 0%, rgba(70,138,252,1) 100%);
     margin: 0px;
 }
 
@@ -93,32 +96,24 @@ h2 {
     font-size: 50px;
 }
 
-
-/* .info {
-    margin: 1rem;
-    padding: -1rem 0rem;
-    text-align: left;
-    display: wrap;
-    color: white;
-} */
 .flex-container {
     display: flex;
 }
 
 /* .flex-child-1 {
     flex: 1;
-    border: 2px solid yellow;
+    border-right: 2px solid;
     color: white;
     font-size: 50px;
 }   */
 
 .flex-child-1 h1 {
-    border-right: 10px solid white;
+    border-right: 5px solid white;
     padding-right: 2rem;
     flex: 1;
     padding-top: 1rem;
     color: white;
-    font-size: 40px;
+    font-size: 2rem;
     margin-left: 5rem;
     margin-top: 5rem;
 }
@@ -131,25 +126,12 @@ h2 {
     margin-top: 5rem;
 }
 
-/* .flex-child:first-child {
-    margin-right: 20px;
-}  */
-
-/* .about-me h1 {
-    border: 1px solid black;
-    margin-top: 10px;
-    margin-right: 100px;
-    color: white;
-    
-} */
-
 .flex-child-3 h1 {
-    border-right: 10px solid white;
-    padding-right: 2rem;
-    flex: 1;
+    border-right: 5px solid white;
+    padding-right: 1rem;
     padding-top: 1rem;
     color: white;
-    font-size: 40px;
+    font-size: 2rem;
     margin-left: 5rem;
     margin-top: 5rem;
 }
@@ -175,24 +157,15 @@ h2 {
     font-size: 1rem;
 }
 
-/* .about-me .info {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border: 1px solid black;
-    color: white;
-    margin: 1rem;
-    padding: -1rem 0rem;
-    text-align: left;
-    display: wrap;
-    color: white;
-} */
-
 .container-1 {
     display: flex;
     flex-flow: wrap;
     row-gap: 10px;
-    margin: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    padding-left: 7rem;
+    padding-top: 5rem;
+    padding-right: 5rem;
 }
 
 .child-1 {
@@ -206,7 +179,6 @@ h2 {
     flex: 0 1 40%; 
     border: 5px solid purple;
     margin-left: 10rem;
-    
 }
 
 .child-3 {
