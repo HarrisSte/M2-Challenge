@@ -118,7 +118,7 @@ h2 {
     flex: 1;
     padding-top: 1rem;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 5rem;
     margin-top: 5rem;
 }
@@ -126,7 +126,7 @@ h2 {
 .flex-child-2 {
     flex: 1;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 2rem;
     margin-top: 5rem;
 }
@@ -135,13 +135,13 @@ h2 {
     margin-right: 20px;
 }  */
 
-.about-me h1 {
+/* .about-me h1 {
     border: 1px solid black;
     margin-top: 10px;
     margin-right: 100px;
     color: white;
     
-}
+} */
 
 .flex-child-3 h1 {
     border-right: 10px solid white;
@@ -149,7 +149,7 @@ h2 {
     flex: 1;
     padding-top: 1rem;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 5rem;
     margin-top: 5rem;
 }
@@ -170,8 +170,8 @@ h2 {
 }
 
 .flex-child-4 nav li {
-    display: inline-block;
-    padding-right: 30px;
+    display: inline-flex;
+    padding-right: 2rem;
     font-size: 1rem;
 }
 
@@ -198,30 +198,35 @@ h2 {
 .child-1 {
     flex: 0 1 100%;
     border: 5px solid black;
-    margin: 20px;
+    margin-left: 10rem;
     color: white;
 }
 
 .child-2 {
-    flex: 0 1 50%; 
+    flex: 0 1 40%; 
     border: 5px solid purple;
+    margin-left: 10rem;
     
 }
 
 .child-3 {
     flex: 0 1 50%; 
     border: 5px solid red;
+    flex: 40;
+    margin-left: 1rem;
 }
 
 .child-4 {
-    flex: 0 1 50%; 
+    flex: 0 1 40%; 
     border: 5px solid green;
+    margin-left: 10rem;
 }
 
 .child-5 {
     flex: 0 1 50%; 
     border: 5px solid yellow;
-
+    flex: 40;
+    margin-left: 1rem;
 }
 
 footer {
