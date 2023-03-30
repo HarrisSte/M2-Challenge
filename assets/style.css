@@ -9,8 +9,8 @@
 }
 
 body {
-    background: rgb(14,35,144);
-    background: radial-gradient(circle, rgba(14,35,144,1) 0%, rgba(70,138,252,1) 100%);
+    background: rgb(209,214,236);
+    background: radial-gradient(circle, rgba(209,214,236,1) 0%, rgba(57,119,230,1) 100%);
     margin: 0px;
 }
 
@@ -163,39 +163,52 @@ h2 {
     row-gap: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    padding-left: 7rem;
+    /* padding-left: 7rem;
     padding-top: 5rem;
-    padding-right: 5rem;
+    padding-right: 5rem; */
 }
 
 .child-1 {
+    position: relative;
+    background-image: url("../images/resume.jpg");
+    height: 300px;
     flex: 0 1 100%;
     border: 5px solid black;
     margin-left: 10rem;
     color: white;
 }
 
+.child-1 h2 {
+    position: absolute;
+    background: blue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
+}
 .child-2 {
-    flex: 0 1 40%; 
+    position: relative;
+    flex: 0 1 45%; 
     border: 5px solid purple;
     margin-left: 10rem;
 }
 
 .child-3 {
-    flex: 0 1 50%; 
+    position: relative;
+    flex: 0 1 45%; 
     border: 5px solid red;
     flex: 40;
     margin-left: 1rem;
 }
 
 .child-4 {
-    flex: 0 1 40%; 
+    position: relative;
+    flex: 0 1 45%; 
     border: 5px solid green;
     margin-left: 10rem;
 }
 
 .child-5 {
-    flex: 0 1 50%; 
+    flex: 0 1 45%; 
     border: 5px solid yellow;
     flex: 40;
     margin-left: 1rem;
