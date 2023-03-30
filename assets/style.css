@@ -20,10 +20,6 @@ main {
   flex-wrap: wrap;
 }
 
-/* h2 {
-    font-size: 20px;
-} */
-
 .main-header {
     height: 2;
     display: flex;
@@ -101,13 +97,6 @@ main {
     display: flex;
     padding-bottom: 2rem;
 }
-
-/* .flex-child-1 {
-    flex: 1;
-    border-right: 2px solid;
-    color: white;
-    font-size: 50px;
-}   */
 
 .flex-child-1 h1 {
     border-right: 5px solid white;
@@ -203,6 +192,9 @@ main {
 }
 .child-3 {
     position: relative;
+    background-image: url("../images/comingsoon.jpg");
+    height: 300px;
+    background-size: cover;
     flex: 0 1 45%; 
     border: 5px solid red;
     flex: 40;
@@ -217,6 +209,9 @@ main {
 }
 .child-4 {
     position: relative;
+    background-image: url("../images/comingsoon.jpg");
+    height: 300px;
+    background-size: cover;
     flex: 0 1 45%; 
     border: 5px solid green;
     margin-left: 10rem;
@@ -232,6 +227,9 @@ main {
 
 .child-5 {
     position: relative;
+    background-image: url("../images/comingsoon.jpg");
+    height: 300px;
+    background-size: cover;
     flex: 0 1 45%; 
     border: 5px solid yellow;
     flex: 40;
