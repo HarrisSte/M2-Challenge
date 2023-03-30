@@ -19,9 +19,9 @@ main {
   flex-wrap: wrap;
 }
 
-h2 {
+/* h2 {
     font-size: 20px;
-}
+} */
 
 .main-header {
     height: 2;
@@ -98,6 +98,7 @@ h2 {
 
 .flex-container {
     display: flex;
+    padding-bottom: 2rem;
 }
 
 /* .flex-child-1 {
@@ -163,9 +164,6 @@ h2 {
     row-gap: 10px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    /* padding-left: 7rem;
-    padding-top: 5rem;
-    padding-right: 5rem; */
 }
 
 .child-1 {
@@ -187,11 +185,20 @@ h2 {
 }
 .child-2 {
     position: relative;
+    background-image: url ("../images/portfolio.jpg");
+    height: 300px;
     flex: 0 1 45%; 
     border: 5px solid purple;
     margin-left: 10rem;
 }
 
+.child-2 h2 {
+    position: absolute;
+    background: blue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
+}
 .child-3 {
     position: relative;
     flex: 0 1 45%; 
@@ -199,7 +206,13 @@ h2 {
     flex: 40;
     margin-left: 1rem;
 }
-
+.child-3 h2 {
+    position: absolute;
+    background: blue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
+}
 .child-4 {
     position: relative;
     flex: 0 1 45%; 
@@ -207,11 +220,28 @@ h2 {
     margin-left: 10rem;
 }
 
+.child-4 h2 {
+    position: absolute;
+    background: blue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
+}
+
 .child-5 {
+    position: relative;
     flex: 0 1 45%; 
     border: 5px solid yellow;
     flex: 40;
     margin-left: 1rem;
+}
+
+.child-5 h2 {
+    position: absolute;
+    background: blue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
 }
 
 footer {
@@ -224,4 +254,15 @@ footer {
 
 footer h2 {
     font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-1 .flex-container {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 }
