@@ -1,6 +1,7 @@
-/* :root {
+:root {
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-} */
+}
 
 * {
     box-sizing: border-box;
@@ -35,7 +36,7 @@ main {
     background-color: #50679C;
     background-size: 2;
     font-size: 36px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     border-radius: 10px;
     padding-left: 100px;
     color: #154360;
@@ -45,7 +46,7 @@ main {
 
 .main-header nav {
     padding-top: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     position: absolute;
     right: 10px;
 }
@@ -78,7 +79,7 @@ main {
     padding: 175px 20px;
     color: blue;
     display: inline-block;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
 }
 
 .banner h2 {
@@ -88,7 +89,7 @@ main {
     bottom: 0;
     right: 15px;
     color: darkblue;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
 }
 
 .title h1 {
@@ -147,7 +148,7 @@ main {
 
 .flex-child-4 nav {
     padding-top: 15px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     position: center;
     right: 10px;
 }
@@ -170,10 +171,10 @@ main {
     position: relative;
     background-image: url("../images/resume.jpg");
     height: 300px;
+    background-size: cover;
     flex: 0 1 100%;
     border: 5px solid black;
     margin-left: 10rem;
-    color: white;
 }
 
 .child-1 h2 {
@@ -185,8 +186,9 @@ main {
 }
 .child-2 {
     position: relative;
-    background-image: url ("../images/portfolio.jpg");
+    background-image: url("../images/portfolio.jpg");
     height: 300px;
+    background-size: cover;
     flex: 0 1 45%; 
     border: 5px solid purple;
     margin-left: 10rem;
@@ -256,7 +258,7 @@ footer h2 {
     font-size: 20px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container-1 .flex-container {
         flex: 0 0 50%;
         max-width: 50%;
@@ -265,4 +267,4 @@ footer h2 {
 
 @media screen and (max-width: 768px) {
 
-}
+} */
