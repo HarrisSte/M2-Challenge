@@ -1,6 +1,24 @@
 :root {
   --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --white-font: white;
+}
 
+a {
+    color:aqua;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:visited {
+    color: purple;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 * {
@@ -10,7 +28,7 @@
 }
 
 body {
-    background: rgb(209,214,236);
+    /* background: rgb(209,214,236); */
     background: radial-gradient(circle, rgba(209,214,236,1) 0%, rgba(57,119,230,1) 100%);
     margin: 0px;
 }
@@ -25,7 +43,7 @@ main {
     display: flex;
     background-color: #214FB9;
     position: relative;
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 
 .main-header h1 {
@@ -73,7 +91,6 @@ main {
 
 .banner p {
     padding: 175px 20px;
-    color: blue;
     display: inline-block;
     font-family: var(--font);
 }
@@ -84,7 +101,7 @@ main {
     top: 215px;
     bottom: 0;
     right: 15px;
-    color: darkblue;
+    color: var(--white-font);
     font-family: var(--font);
 }
 
@@ -96,12 +113,13 @@ main {
 .flex-container {
     display: flex;
     padding-bottom: 2rem;
+    padding-right: 5rem;
 }
 
 .flex-child-1 h1 {
-    border-right: 5px solid white;
+    border-right: 5px solid var(--white-font);
     padding-right: 2rem;
-    flex: 1;
+    flex: 0 1 100%;
     padding-top: 1rem;
     color: white;
     font-size: 2rem;
@@ -109,19 +127,19 @@ main {
     margin-top: 5rem;
 }
 
-.flex-child-2 {
-    flex: 1;
-    color: white;
+.flex-child-2 p {
+    flex: 1 1 45%;
+    color: var(--white-font);
     font-size: 18px;
     margin-left: 2rem;
     margin-top: 5rem;
 }
 
 .flex-child-3 h1 {
-    border-right: 5px solid white;
+    border-right: 5px solid var(--white-font);
     padding-right: 1rem;
     padding-top: 1rem;
-    color: white;
+    color: var(--white-font);
     font-size: 2rem;
     margin-left: 5rem;
     margin-top: 5rem;
@@ -129,7 +147,7 @@ main {
 
 .flex-child-4 {
     flex: 1;
-    color: white;
+    color: var(--white-font);
     font-size: 22px;
     margin-left: 2rem;
     margin-top: 5rem;
@@ -150,15 +168,18 @@ main {
 
 .container-1 {
     display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
     flex-flow: wrap;
     row-gap: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    font-family: var(--font);
+    color: var(--white-font);
+    margin-right: 2rem;
 }
 
 .portfolio-card {
     position: relative;
-    flex: 0 1 45%;
+    flex: 0 1 100%;
     height: 300px;  
     margin-left: 10rem;
 }
@@ -167,36 +188,44 @@ main {
     flex: 0 1 100%;
 }
 
+.horiseon-card {
+    position: relative;
+    flex: 0 1 100%;
+    height: 300px;  
+    margin-left: 10rem;
+}
+
+#horiseon-container {
+    flex: 0 1 45%;
+}
+
 .child-1 {
-    /* position: relative; */
     background-image: url("../images/resume.jpg");
     height: 100%;
     background-size: cover;
-    /* flex: 0 1 100%; */
     border: 5px solid black;
-    /* margin-left: 10rem; */
+    margin-right: 1rem;
 }
 
 .child-1 h2 {
     position: absolute;
     background: blue;
+    color: var(--white-font);
     display: inline-block;
     padding: 1rem;
     bottom: 1rem;
 }
 .child-2 {
-    position: relative;
     background-image: url("../images/portfolio.jpg");
     height: 300px;
     background-size: cover;
-    flex: 0 1 45%; 
     border: 5px solid purple;
-    margin-left: 10rem;
 }
 
 .child-2 h2 {
     position: absolute;
     background: blue;
+    color: var(--white-font);
     display: inline-block;
     padding: 1rem;
     bottom: 1rem;
@@ -206,9 +235,8 @@ main {
     background-image: url("../images/comingsoon.jpg");
     height: 300px;
     background-size: cover;
-    flex: 0 1 45%; 
+    flex: 0 1 40%; 
     border: 5px solid red;
-    flex: 40;
     margin-left: 1rem;
 }
 .child-3 h2 {
@@ -241,9 +269,8 @@ main {
     background-image: url("../images/comingsoon.jpg");
     height: 300px;
     background-size: cover;
-    flex: 0 1 45%; 
+    flex: 0 1 40%; 
     border: 5px solid yellow;
-    flex: 40;
     margin-left: 1rem;
 }
 
@@ -259,8 +286,8 @@ footer {
     display:flex;
     justify-content: center;
     padding: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: antiquewhite
+    font-family: var(--font);
+    color: var(--white-font);
 }
 
 footer h2 {
@@ -270,13 +297,9 @@ footer h2 {
 @media screen and (max-width: 768px) {
 /* set flex basis (3rd number in chain) of flex cards to 100% */
 /* flex direction column in parent */
-    #resume-container {
-        display: none;
-        /* flex: 0 0 50%;
-        max-width: 50%; */
+    .container-1 {
+        display: block;
+        flex: 1 0 45%;
+        /* min-width: 50%; */
     }
 }
-
-/* @media screen and (max-width: 768px) {
-
-} */
