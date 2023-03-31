@@ -101,7 +101,7 @@ main {
     top: 215px;
     bottom: 0;
     right: 15px;
-    color: var(--white-font);
+    color: white;
     font-family: var(--font);
 }
 
@@ -129,7 +129,7 @@ main {
 
 .flex-child-2 p {
     flex: 1 1 45%;
-    color: var(--white-font);
+    color: darkblue;
     font-size: 18px;
     margin-left: 2rem;
     margin-top: 5rem;
@@ -155,6 +155,7 @@ main {
 
 .flex-child-4 nav {
     padding-top: 15px;
+    color: navy;
     font-family: var(--font);
     position: center;
     right: 10px;
@@ -163,7 +164,7 @@ main {
 .flex-child-4 nav li {
     display: inline-flex;
     padding-right: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .container-1 {
@@ -174,7 +175,7 @@ main {
     row-gap: 10px;
     font-family: var(--font);
     color: var(--white-font);
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
 .portfolio-card {
