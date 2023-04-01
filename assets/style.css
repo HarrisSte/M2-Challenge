@@ -175,6 +175,7 @@ main {
     row-gap: 10px;
     font-family: var(--font);
     color: var(--white-font);
+    padding: 1rem;
     /* margin-right: 2rem; */
 }
 
@@ -204,13 +205,13 @@ main {
     background-image: url("../images/resume1.png");
     height: 100%;
     background-size: cover;
-    border: 5px solid darkblue;
+    border: 5px solid yellow;
     margin-right: 1rem;
 }
 
 .child-1 h2 {
     position: absolute;
-    background: darkblue;
+    background: purple;
     color: var(--white-font);
     display: inline-block;
     padding: 1rem;
@@ -220,7 +221,7 @@ main {
     background-image: url("../images/portfolio.jpg");
     height: 300px;
     background-size: cover;
-    border: 5px solid darkblue;
+    border: 5px solid red;
 }
 
 .child-2 h2 {
@@ -231,13 +232,31 @@ main {
     padding: 1rem;
     bottom: 1rem;
 }
-.child-3 {
+
+.coming-soon-container {
     position: relative;
     background-image: url("../images/comingsoon.jpg");
     height: 300px;
     background-size: cover;
     flex: 0 1 40%; 
-    border: 5px solid darkblue;
+    border: 5px solid green;
+    margin-left: 1rem;
+}
+
+.coming-soon-container h2 {
+    position: absolute;
+    background: darkblue;
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
+}
+/* .child-3 {
+    position: relative;
+    background-image: url("../images/comingsoon.jpg");
+    height: 300px;
+    background-size: cover;
+    flex: 0 1 40%; 
+    border: 5px solid green;
     margin-left: 1rem;
 }
 .child-3 h2 {
@@ -245,9 +264,9 @@ main {
     background: darkblue;
     display: inline-block;
     padding: 1rem;
-    bottom: 1rem;
-}
-.child-4 {
+    bottom: 1rem; */
+/* } */
+/* .child-4 {
     position: relative;
     background-image: url("../images/comingsoon.jpg");
     height: 300px;
@@ -281,7 +300,7 @@ main {
     display: inline-block;
     padding: 1rem;
     bottom: 1rem;
-}
+} */
 
 footer {
     display:flex;
