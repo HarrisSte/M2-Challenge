@@ -178,12 +178,32 @@ main {
     background-size: cover;
 }
 
+.long-card h2 {
+    position: relative;
+    background: darkblue;
+    color: var(--white-font);
+    display: inline-block;
+    padding: 1rem 6rem;
+    bottom: -13rem;
+    font-size: 2rem;
+}
+
 .short-card {
     grid-column: span 1;
     height: 300px;
-    border: 5px solid green;
+    border: 5px solid navy;
     width: 100%;
     background-image: url("../images/comingsoon.jpg");
+    background-size: cover;
+}
+
+.short-card h2 {
+    position: relative;
+    background: darkblue;
+    color: var(--white-font);
+    display: inline-block;
+    padding: 1rem;
+    bottom: 1rem;
 }
 
 footer {
