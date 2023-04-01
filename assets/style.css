@@ -4,11 +4,11 @@
 }
 
 a {
-  color: teal;
+  color: navy;
 }
 
 a :hover {
-  color: darkblue;
+  color: teal;
 }
 
 a :visited {
