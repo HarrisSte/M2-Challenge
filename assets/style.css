@@ -1,10 +1,10 @@
 :root {
-  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --white-font: white;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --white-font: white;
 }
 
 a {
-    color:aqua;
+    color: aqua;
 }
 
 a:hover {
@@ -22,14 +22,14 @@ a:visited {
 }
 
 body {
-    /* background: rgb(209,214,236); */
-    background: radial-gradient(circle, rgba(209,214,236,1) 0%, rgba(57,119,230,1) 100%);
+    background: rgb(209,214,236);
+    background: radial-gradient(circle, rgba(209, 214, 236, 1) 0%, rgba(57, 119, 230, 1) 100%);
     margin: 0px;
 }
 
 main {
-  display: inline;
-  flex-wrap: wrap;
+    display: inline;
+    flex-wrap: wrap;
 }
 
 .main-header {
@@ -50,7 +50,7 @@ main {
     color: #154360;
     padding-top: inherit;
     padding-right: 10px;
-    }
+}
 
 .main-header nav {
     padding-top: 15px;
@@ -76,11 +76,11 @@ main {
 }
 
 .banner img {
-   position: relative;
-   display: flex;
-   min-width: 100%;
-   min-height: 300%;
-   object-fit: cover; 
+    position: relative;
+    display: flex;
+    min-width: 100%;
+    min-height: 300%;
+    object-fit: cover;
 }
 
 .banner p {
@@ -164,11 +164,9 @@ main {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 8px;
     padding-left: 10%;
     padding-right: 10%;
-    font-family: var(--font);
-    color: var(--white-font);
 }
 
 .long-card {
@@ -176,17 +174,20 @@ main {
     height: 300px;
     border: 5px solid navy;
     width: 100%;
+    background-image: url("../images/resume1.png");
+    background-size: cover;
 }
 
 .short-card {
     grid-column: span 1;
     height: 300px;
-    border: 5px solid navy;
+    border: 5px solid green;
     width: 100%;
+    background-image: url("../images/comingsoon.jpg");
 }
 
 footer {
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 30px;
     font-family: var(--font);
@@ -198,11 +199,23 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-/* set flex basis (3rd number in chain) of flex cards to 100% */
-/* flex direction column in parent */
+
+    /* set flex basis (3rd number in chain) of flex cards to 100% */
+    /* flex direction column in parent */
     .container-1 {
         display: block;
         flex: 1 0 45%;
         /* min-width: 50%; */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* change to one column */
+    }
+
+    .long-card,
+    short-card {
+        grid-column: 1 / 2;
+        /* reset to span one column */
     }
 }
