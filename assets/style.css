@@ -21,12 +21,6 @@ a:visited {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     /* background: rgb(209,214,236); */
     background: radial-gradient(circle, rgba(209,214,236,1) 0%, rgba(57,119,230,1) 100%);
@@ -167,16 +161,14 @@ main {
     font-size: 1.5rem;
 }
 
-.container-1 {
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 100%;
-    flex-flow: wrap;
-    row-gap: 10px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
     font-family: var(--font);
     color: var(--white-font);
-    padding: 1rem;
-    /* margin-right: 2rem; */
 }
 
 .portfolio-card {
