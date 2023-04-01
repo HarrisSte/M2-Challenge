@@ -7,11 +7,11 @@ a {
   color: navy;
 }
 
-a :hover {
+a:hover {
   color: teal;
 }
 
-a :visited {
+a:visited {
   color: aquamarine;
 }
 
@@ -85,6 +85,7 @@ main {
   min-width: 100%;
   min-height: 300%;
   object-fit: cover;
+  margin-top: 5rem;
 }
 
 .banner p {
@@ -179,6 +180,13 @@ main {
   height: 100%;
 }
 
+.long-card a,
+.short-card a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .long-card {
   grid-column: 1 / 3;
   height: 300px;
@@ -200,13 +208,13 @@ main {
   bottom: -13rem;
   font-size: 2rem;
 }
-
+  
 .short-card {
   grid-column: span 1;
   height: 300px;
   border: 6px solid navy;
   width: 100%;
-  background-image: url("../images/comingsoon.jpg");
+  background-image: url("../images/portfolio.jpg");
   background-size: cover;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
@@ -220,14 +228,7 @@ main {
   display: inline-block;
   padding: 1rem 6rem;
   bottom: -13rem;
-  font-size: 1rem;
-}
-
-#horiseon-container {
-  background-image: url("../images/portfolio.jpg");
-  background-size: cover;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  font-size: 1.5rem;
 }
 
 footer {
