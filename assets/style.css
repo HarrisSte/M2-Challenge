@@ -225,23 +225,18 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-
-    /* set flex basis (3rd number in chain) of flex cards to 100% */
-    /* flex direction column in parent */
     .container-1 {
         display: block;
         flex: 1 0 45%;
-        /* min-width: 50%; */
     }
 
     .grid-container {
         grid-template-columns: 1fr;
-        /* change to one column */
+
     }
 
     .long-card,
     short-card {
         grid-column: 1 / 2;
-        /* reset to span one column */
     }
 }
