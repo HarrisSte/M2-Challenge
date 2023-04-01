@@ -8,7 +8,7 @@ You will find there is a brief 'About Me' section where I introduce myself. Belo
 At the bottom of the page, you will finally find different ways you can contact me. All of which are clickable links that will bring you to your desired inquiry -- with the exception of my phone number.
 
 # Link
-PUT LINK HERE
+(https://harrisste.github.io/Personal-Profile/)
 
 # Screenshot
-PUT SCREENSHOT HERE
+![M2Chall](https://user-images.githubusercontent.com/126029841/229313161-47472522-bf60-49e6-af82-e719a6054f2d.PNG)
