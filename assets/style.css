@@ -183,6 +183,7 @@ main {
   display: block;
   height: 100%;
   width: 100%;
+  /* background-image: (); */
 }
 
 .long-card {
@@ -213,6 +214,17 @@ main {
   border: 6px solid navy;
   width: 100%;
   background-image: url("../images/portfolio.jpg");
+  background-size: cover;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.short-card .zoo {
+  grid-column: span 1;
+  height: 300px;
+  border: 6px solid navy;
+  width: 100%;
+  background-image: url("../images/lemurs-1010643_640.jpg");
   background-size: cover;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
