@@ -23,11 +23,9 @@ a:visited {
 
 body {
   background: rgb(209, 214, 236);
-  background: radial-gradient(
-    circle,
-    rgba(209, 214, 236, 1) 0%,
-    rgba(57, 119, 230, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(209, 214, 236, 1) 0%,
+      rgba(57, 119, 230, 1) 100%);
   margin: 0px;
 }
 
@@ -208,7 +206,7 @@ main {
   bottom: -13rem;
   font-size: 2rem;
 }
-  
+
 .short-card {
   grid-column: span 1;
   height: 300px;
