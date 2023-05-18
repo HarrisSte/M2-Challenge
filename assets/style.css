@@ -67,6 +67,8 @@ main {
   position: absolute;
   right: 10px;
   /* Styles for the navigation inside main header */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-header nav li {
@@ -74,6 +76,8 @@ main {
   padding-right: 15px;
   margin-bottom: 10px;
   /* Add margin-bottom to create spacing between list items */
+  flex: 0 0 100%;
+  /* Make the list items take full width on small screens */
 }
 
 
