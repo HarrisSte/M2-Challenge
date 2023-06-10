@@ -66,10 +66,9 @@ main {
   font-family: var(--font);
   position: absolute;
   right: 10px;
-  /* Styles for the navigation inside main header */
   display: flex;
-  flex-wrap: wrap;
 }
+
 
 .main-header nav li {
   display: inline-block;
@@ -189,7 +188,7 @@ main {
 }
 
 .flex-child-4 nav li {
-  display: inline-flex;
+  display: block;
   padding-right: 2rem;
   font-size: 1.5rem;
   font-family: var(--font);
@@ -302,5 +301,22 @@ footer h2 {
   .long-card,
   short-card {
     grid-column: 1 / 2;
+  }
+
+  .main-header nav li {
+    display: block;
+    padding-right: 2rem;
+    flex: 0 0 100%;
+  }
+
+  .main-header {
+    padding-top: 60px;
+    /* Add padding-top to create space for the nav elements */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-header nav {
+    flex-direction: column;
   }
 }
