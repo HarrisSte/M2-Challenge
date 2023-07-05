@@ -316,7 +316,18 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .main-header nav {
+  .main-header ul {
     flex-direction: column;
+  }
+
+  .main-header ul li {
+    display: block;
+    padding-right: 2rem;
+    margin-bottom: 10px;
+    flex: 0 0 100%;
+  }
+
+  .main-header {
+    padding-top: 60px;
   }
 }
