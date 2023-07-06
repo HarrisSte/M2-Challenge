@@ -74,9 +74,7 @@ main {
   display: inline-block;
   padding-right: 15px;
   margin-bottom: 10px;
-  /* Add margin-bottom to create spacing between list items */
   flex: 0 0 100%;
-  /* Make the list items take full width on small screens */
 }
 
 
@@ -255,6 +253,18 @@ main {
   border: 6px solid navy;
   width: 100%;
   background-image: url("../images/lemurs-1010643_640.jpg");
+  background-size: cover;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  /* Styles for the "zoo" short card */
+}
+
+.short-card .devs {
+  grid-column: span 1;
+  height: 300px;
+  border: 6px solid navy;
+  width: 100%;
+  background-image: url("../images/1322536-beautiful-techy-background-1920x1080-for-phones.jpg");
   background-size: cover;
   border-radius: 8px;
   transition: all 0.5s ease-in-out;
